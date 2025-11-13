@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Belajar</string>
+    <string-array name="ekstra">
+        <item>ELVISKA</item>
+        <item>NAVISKA</item>
+        <item>Rohis</item>
+        <item>Rohkat</item>
+        <item>Rohkris</item>
+        <item>Voli</item>
+        <item>Basket</item>
+        <item>Futsal</item>
+        <item>Kir Mading</item>
+        <item>PMR</item>
+    </string-array>
+    <string-array name="operasiaritmatika">
+        <item>Tambah</item>
+        <item>Kurang</item>
+        <item>Kali</item>
+        <item>Bagi</item>
+    </string-array>
+
+    <string-array name="suhu">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#0c1844"
+        app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cirFoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/pp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rahmania Nurul Apriliani"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/cirFoto"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/nohp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="087888057165"
+                android:textSize="14sp"
+                android:layout_toEndOf="@id/cirFoto"
+                android:layout_below="@+id/nama"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rahmania.nurul102@smk.belajar.id"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/cirFoto"
+                android:layout_below="@+id/nohp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Selamat Siang\nRabu, 25 September 2024"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="130dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvsamping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIS\nNISN\nKelas\nJurusan\nStatus\nTahun Masuk\nTahun Lulus"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="15dp"/>
+            <TextView
+                android:id="@+id/TVkanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18146\n0085002191\nXI\nRPL\nAktif\n2023\n-"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textSize="17sp"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="240dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvbawah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat\nJenis Kelamin\nNo HP\nEmail\nTempat Lahir\nTanggal Lahir\nAgama"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="15dp"/>
+            <TextView
+                android:id="@+id/TVbawah2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sukoharjo\nPerempuan\n087888057165\nrahmania.nurul102@smk.belajar.id\nSurakarta\n10 April 2008\nIslam"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="93dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardprofil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#0c1844"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil Saya"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2infor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#0c1844"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/infor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi Saya"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

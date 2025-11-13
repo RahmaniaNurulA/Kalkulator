@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="12dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirFoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profil"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rahmania Nurul Apriliani"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/cirFoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/nohp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="087888057165"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/cirFoto"
+            android:layout_below="@+id/nama"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rahmania.nurul102@smk.belajar.id"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/cirFoto"
+            android:layout_below="@+id/nohp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
